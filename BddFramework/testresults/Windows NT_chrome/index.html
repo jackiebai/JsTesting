@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0 10% 0 10%;
+			background-color: #fff;
+			color: #282828;
+		}
+		a, a:hover, a:visited {
+			color: #fff;
+			text-decoration: none;
+		}
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+		th {
+			text-align: left;
+			background-color: #eee;
+			color: #999;
+			text-transform: capitalize;
+		}
+		th, td {
+			padding: 5px 10px;
+			border-bottom: rgba(162, 162, 162, 0.16) 1px solid;
+		}
+		tr.failed {
+			cursor: pointer;
+		}
+		tr.passed td {
+			background-color: rgb(150,250,150);
+		}
+		tr.failed td {
+			background-color: rgb(250,150,150);
+		}
+		td.status {
+			text-transform: capitalize;
+		}
+		h1 {
+			margin: 0;
+			padding: 20px 10px 10px 10px;
+			color: #282828;
+		}
+		h2 {
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		h2.component {
+			color: #282828;
+			padding: 0 10px 10px 10px;
+		}
+		h3 {
+			margin: 25px 0 10px 0;
+		}
+
+		.footer {
+			color: #3C494C;
+			text-align: center;
+			padding: 20px;
+			float: left;
+			width: 100%;
+		}
+		.footer a, footer a:visited {
+			color: #3C494C;
+		}
+
+		img {
+			max-width: 100%;
+		}
+		.filename {
+			margin: 0 0 10px 0;
+			color: #999;
+		}
+		span.tags {
+			float:right;
+			font-size: 15px;
+			color: #888;
+		}
+		span.scenario-tag {
+			float: right;
+			font-size: 15px;
+			color: #888;
+			margin-left: 0.5em;
+		}
+		p.story {
+			font-size: 20px;
+			color: #888;
+			font-style: italic;
+			padding-left: 20px;
+		}
+		div.report, div.summary {
+			width: 100%;
+			float: left;
+			padding: 10px;
+			background: #fff;
+			padding-bottom: 10px;
+		}
+		div.summary {
+			margin-bottom: 0px;
+			padding: 0;
+			width: 25%;
+			padding-top: 20px;
+		}
+		div.summary table {
+			width: 100%;
+			float: left;
+		}
+		td.result {
+			text-align: right;
+		}
+
+		img {
+			margin-top: 10px;
+		}
+		.hidden {
+			display: none;
+		}
+		.header {
+			width: 100%;
+			float: left;
+		}
+		.titlewrapper {
+			width: 75%;
+			float: left;
+		}
+	</style>
+	<title>Cucumber Report</title>
+</head>
+<body>
+
+	<div class="header">
+		<div class="titlewrapper">
+			<h1>Cucumber Report</h1>
+			<h2 class="component"></h2>
+		</div>
+
+		<div class="summary">
+			<h2>Summary</h2>
+			<table>
+				<tr>
+					<td>Number of features</td>
+					<td class="result">1</td>
+				</tr>
+				<tr>
+					<td>Number of scenarios</td>
+					<td class="result">1</td>
+				</tr>
+				<tr>
+					<td>Passed scenarios</td>
+					<td class="result">1</td>
+				</tr>
+				<tr>
+					<td>Failed scenarios</td>
+					<td class="result">0</td>
+				</tr>
+				<tr>
+					<td>Status</td>
+					<td class="result">OK</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="report">
+		<h2>Feature: Parent Grades Mobile Website <span class="tags"></span></h2>
+		<p class="filename">C:\JsTesting\BddFramework\Scripts\Features\parentGradesMobileSite.feature</p>
+		<p class="story"></p>
+			<h3>
+				Scenario: As a Parent, I should be able to log into the SLMS system using my parent credentials.
+			</h3>
+			<table>
+				<tr>
+					<th style="width: 100px;">Condition</th>
+					<th>Step</th>
+					<th style="width: 100px;">Line</th>
+					<th style="width: 100px;">Status</th>
+				</tr>
+			<tr class="passed">
+				<td>Given </td>
+				<td>Go to login page</td>
+				<td>3</td>
+				<td class="status">passed</td>
+			</tr>
+			<tr class="hidden passed">
+				<td colspan="4"><pre></pre></td>
+			</tr>
+			<tr class="passed">
+				<td>When </td>
+				<td>Login with valid parent credentials &quot;sparent1&quot; &quot;password&quot;</td>
+				<td>4</td>
+				<td class="status">passed</td>
+			</tr>
+			<tr class="hidden passed">
+				<td colspan="4"><pre></pre></td>
+			</tr>
+			<tr class="passed">
+				<td>Then </td>
+				<td>Go to SLMS Parent Grades site</td>
+				<td>5</td>
+				<td class="status">passed</td>
+			</tr>
+			<tr class="hidden passed">
+				<td colspan="4"><pre></pre></td>
+			</tr>
+			<tr class="passed">
+				<td>Then </td>
+				<td>Upon logging in the first thing a parent sees is the Landing page with title &quot;Mobile&quot;</td>
+				<td>6</td>
+				<td class="status">passed</td>
+			</tr>
+			<tr class="hidden passed">
+				<td colspan="4"><pre></pre></td>
+			</tr>
+			<tr class="passed">
+				<td>Then </td>
+				<td>Parent can navigate to the Grades page for their child&#x2F;children at index &quot;0&quot;</td>
+				<td>7</td>
+				<td class="status">passed</td>
+			</tr>
+			<tr class="hidden passed">
+				<td colspan="4"><pre></pre></td>
+			</tr>
+			<tr class="passed">
+				<td>Then </td>
+				<td>&quot;249&quot; items are available for the child</td>
+				<td>8</td>
+				<td class="status">passed</td>
+			</tr>
+			<tr class="hidden passed">
+				<td colspan="4"><pre></pre></td>
+			</tr>
+			</table>
+			
+	</div>
+
+	<div class="footer">
+		<p><a href="https://github.com/leinonen/cucumber-html-report">Cucumber HTML Report Generator</a> by <a href="http://leinonen.se">Peter Leinonen</a> 2016.</p>
+	</div>
+	<script type="text/javascript">
+		(function () {
+			'use strict';
+
+			var failed = document.getElementsByClassName('failed');
+			for (var i = 0; i < failed.length; i += 1) {
+				if(failed[i].className === 'failed') {
+					failed[i].addEventListener('click', (function (i) {
+						return function () {
+							if (failed[i].nextElementSibling.classList.contains('hidden')) {
+								failed[i].nextElementSibling.classList.remove('hidden');
+							} else {
+								failed[i].nextElementSibling.classList.add('hidden');
+							}
+						}
+					})(i));
+				}
+				else if(failed[i].classList.contains('hidden')) {
+					console.log('elif here');
+					failed[i].addEventListener('click', (function (i) {
+						return function () {
+							console.log('im here now');
+							if (failed[i].classList.contains('hidden')) {
+								failed[i].classList.remove('hidden');
+							} else {
+								failed[i].classList.add('hidden');
+							}
+						}
+					})(i));
+				}
+			}
+		})(window);
+	</script>
+</body>
+</html>

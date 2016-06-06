@@ -1,0 +1,6 @@
+/.vs/config/applicationhost.config
+/BddFramework/.ntvs_analysis.dat
+/BddFramework/node_modules
+/BddFramework/obj
+/.vs/JsTesting/v14/*.suo
+/BddFramework/bin

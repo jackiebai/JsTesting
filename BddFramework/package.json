@@ -1,0 +1,24 @@
+{
+  "name": "BddFramework",
+  "version": "0.0.0",
+  "description": "ProtractorCucumberFramework",
+  "main": "app.js",
+  "author": {
+    "name": "yunqiang.bai",
+    "email": ""
+  },
+  "scripts": {
+    "install": "node node_modules/protractor/bin/webdriver-manager update",
+    "test_local": "protractor protractorConfig_local.js",
+    "test_bs": "protractor protractorConfig_bs.js"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "cucumber": "^0.10.3",
+    "cucumber-html-report": "^0.3.0",
+    "gulp": "^3.9.1",
+    "protractor": "^3.3.0",
+    "protractor-cucumber-framework": "^0.5.0"
+  }
+}
