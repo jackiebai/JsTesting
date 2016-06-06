@@ -4,3 +4,4 @@
 /BddFramework/obj
 /.vs/JsTesting/v14/*.suo
 /BddFramework/bin
+/BddFramework/testresults
